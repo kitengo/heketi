@@ -344,7 +344,7 @@ var updateDbVolCmd = &cobra.Command{
 func init() {
 	RootCmd.Flags().StringVar(&configfile, "config", "", "Configuration file")
 	RootCmd.Flags().BoolVarP(&showVersion, "version", "v", false, "Show version")
-	RootCmd.Flags().BoolVarP(&disableAuth, "disable-auth", "", false,
+	RootCmd.Flags().BoolVarP(&disableAuth, "disable-auth", "", true,
 		"Disable JWT Authentication")
 	RootCmd.SilenceUsage = true
 
